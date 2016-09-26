@@ -10,8 +10,12 @@ app.get('/', function (req, res) {
 });
 
 // Adding url for profile page
-app.get('/profile', function (req, res) {
+/*app.get('/profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+});*/
+
+app.get('/profile', function (req, res) {
+  res.send('Profile Respone');
 });
 
 app.get('/ui/style.css', function (req, res) {
